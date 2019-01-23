@@ -36,6 +36,60 @@ entryPoint = "https"
 [[acme.domains]]
   main = "local1.com"
   sans = ["test1.local1.com", "test2.local1.com"]
+#[[acme.domains2]]
+#  main = "local2.com"
+#  sans = ["test1.local2.com", "test2.local2.com"]
+#[[acme.domains3]]
+#  main = "local3.com"
+#  sans = ["test1.local3.com", "test2.local3.com"]
+#[[acme.domains4]]
+#  main = "local4.com"
+#  sans = ["test1.local4.com", "test2.local4.com"]
+#[[acme.domains5]]
+#  main = "local5.com"
+#  sans = ["test1.local5.com", "test2.local5.com"]
+#[[acme.domains6]]
+#  main = "local6.com"
+#  sans = ["test1.local6.com", "test2.local6.com"]
+#[[acme.domains7]]
+#  main = "local7.com"
+#  sans = ["test1.local7.com", "test2.local7.com"]
+#[[acme.domains8]]
+#  main = "local8.com"
+#  sans = ["test1.local8.com", "test2.local8.com"]
+#[[acme.domains9]]
+#  main = "local9.com"
+#  sans = ["test1.local9.com", "test2.local9.com"]
+#[[acme.domains10]]
+#  main = "local10.com"
+#  sans = ["test1.local10.com", "test2.local10.com"]
+#[[acme.domains11]]
+#  main = "local11.com"
+#  sans = ["test1.local11.com", "test2.local11.com"]
+#[[acme.domains12]]
+#  main = "local12.com"
+#  sans = ["test1.local12.com", "test2.local12.com"]
+#[[acme.domains13]]
+#  main = "local13.com"
+#  sans = ["test1.local13.com", "test2.local13.com"]
+#[[acme.domains14]]
+#  main = "local14.com"
+#  sans = ["test1.local14.com", "test2.local14.com"]
+#[[acme.domains15]]
+#  main = "local15.com"
+#  sans = ["test1.local15.com", "test2.local15.com"]
+#[[acme.domains16]]
+#  main = "local16.com"
+#  sans = ["test1.local16.com", "test2.local16.com"]
+#[[acme.domains17]]
+#  main = "local17.com"
+#  sans = ["test1.local17.com", "test2.local17.com"]
+#[[acme.domains18]]
+#  main = "local18.com"
+#  sans = ["test1.local18.com", "test2.local18.com"]
+#[[acme.domains19]]
+#  main = "local19.com"
+#  sans = ["test1.local19.com", "test2.local19.com"]
 
 [docker]
 endpoint = "unix:///var/run/docker.sock"
