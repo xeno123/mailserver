@@ -29,13 +29,6 @@ dashboard = true
 [acme]
 email = "{{ EMAIL }}"
 storage = "/etc/traefik/acme/acme.json"
-entryPoint = "https"
-onHostRule = true
-  [acme.tlsChallenge]
-
-[acme]
-email = "{{ EMAIL }}"
-storage = "/etc/traefik/acme/acme.json"
 caServer = "https://acme-staging-v02.api.letsencrypt.org/directory"
 entryPoint = "https"
   [acme.httpChallenge]
