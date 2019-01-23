@@ -24,6 +24,25 @@ services:
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN2}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN3}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN4}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN5}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN6}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN7}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN8}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN9}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN10}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN11}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN12}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN13}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN14}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN15}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN16}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN17}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN18}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN19}
+      #- traefik.frontend.rule=Host:mail.${MAILSERVER_DOMAIN20}
       - traefik.port=8080
       - traefik.docker.network=http_network
     volumes:
@@ -42,6 +61,25 @@ services:
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN2}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN3}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN4}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN5}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN6}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN7}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN8}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN9}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN10}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN11}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN12}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN13}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN14}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN15}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN16}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN17}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN18}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN19}
+      #- traefik.frontend.rule=Host:spam.${MAILSERVER_DOMAIN20}
       - traefik.port=11334
       - traefik.docker.network=http_network
     # extra_hosts:                          - Required for external database (on other server or for local databases on host without docker)
@@ -98,6 +136,25 @@ services:
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN2}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN3}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN4}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN5}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN6}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN7}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN8}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN9}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN10}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN11}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN12}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN13}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN14}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN15}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN16}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN17}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN18}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN19}
+      #- traefik.frontend.rule=Host:postfixadmin.${MAILSERVER_DOMAIN20}
       - traefik.port=8888
       - traefik.docker.network=http_network
     environment:
@@ -125,6 +182,25 @@ services:
       - traefik.enable=true
       - traefik.port=8888
       - traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN2}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN3}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN4}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN5}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN6}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN7}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN8}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN9}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN10}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN11}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN12}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN13}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN14}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN15}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN16}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN17}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN18}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN19}
+      #- traefik.frontend.rule=Host:webmail.${MAILSERVER_DOMAIN20}
       - traefik.docker.network=http_network
     volumes:
       - ${VOLUMES_ROOT_PATH}/rainloop:/rainloop/data
