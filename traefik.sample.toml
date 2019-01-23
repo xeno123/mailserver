@@ -33,6 +33,17 @@ entryPoint = "https"
 onHostRule = true
   [acme.tlsChallenge]
 
+[acme]
+email = "{{ EMAIL }}"
+storage = "/etc/traefik/acme/acme.json"
+caServer = "https://acme-staging-v02.api.letsencrypt.org/directory"
+entryPoint = "https"
+  [acme.httpChallenge]
+  entryPoint = "http"
+[[acme.domains]]
+  main = "local1.com"
+  sans = ["test1.local1.com", "test2.local1.com"]
+
 [docker]
 endpoint = "unix:///var/run/docker.sock"
 domain = "{{ DOMAIN }}"
