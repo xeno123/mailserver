@@ -62,6 +62,7 @@ services:
     - DBPORT=5432
     - DBPASS=${DATABASE_USER_PASSWORD}       # MariaDB database password (required)
     - RSPAMD_PASSWORD=${RSPAMD_PASSWORD}     # Rspamd WebUI password (required)
+    - OPENDKIM_KEY_LENGTH=${OPENDKIM_KEY_LENGTH}
     # - ADD_DOMAINS=aa.tld, www.bb.tld...      # Add additional domains separated by commas (needed for dkim keys etc.)
     # - DEBUG_MODE=true                        # Enable Postfix, Dovecot, Rspamd and Unbound verbose logging
     # - ENABLE_POP3=true                       # Enable POP3 protocol
