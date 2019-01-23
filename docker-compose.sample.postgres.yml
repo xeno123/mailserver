@@ -60,8 +60,8 @@ services:
     - DBDRIVER=pgsql
     - DBHOST=postgres
     - DBPORT=5432
-    #  - DBPASS=${DATABASE_USER_PASSWORD}       # MariaDB database password (required)
-    #  - RSPAMD_PASSWORD=${RSPAMD_PASSWORD}     # Rspamd WebUI password (required)
+    - DBPASS=${DATABASE_USER_PASSWORD}       # MariaDB database password (required)
+    - RSPAMD_PASSWORD=${RSPAMD_PASSWORD}     # Rspamd WebUI password (required)
     # - ADD_DOMAINS=aa.tld, www.bb.tld...      # Add additional domains separated by commas (needed for dkim keys etc.)
     # - DEBUG_MODE=true                        # Enable Postfix, Dovecot, Rspamd and Unbound verbose logging
     # - ENABLE_POP3=true                       # Enable POP3 protocol
@@ -102,7 +102,7 @@ services:
       - DBDRIVER=pgsql
       - DBHOST=postgres
       - DBPORT=5432
-      #- DBPASS=${DATABASE_USER_PASSWORD}
+      - DBPASS=${DATABASE_USER_PASSWORD}
     depends_on:
       - mailserver
       - postgres
